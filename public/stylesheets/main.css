@@ -1,0 +1,118 @@
+body {
+     font-family: ubuntu,sans-serif;
+     font-size: 18px;
+}
+
+.nickname {
+     font-weight: bold;
+}
+
+.userimage, #header {
+     display: none;
+}
+
+#container {
+     margin: 0pt auto;
+     width: 110%;
+}
+
+#grid-container {
+     margin: 0pt auto;
+     text-align: center;
+     width: 100%;
+}
+
+#header {
+     margin: 10px;
+     padding: 20px;
+     text-align: center;
+}
+
+#content-container {
+     float: left;
+     width: 100%;
+}
+
+#filter {
+     margin: 5px;
+     padding: 7px;
+}
+
+ul {
+     list-style-type: none;
+}
+
+#content {
+     clear: left;
+     display: block;
+     float: left;
+     margin: 0pt 0pt 0pt 4%;
+     padding: 20px 0pt;
+     width: 60%;
+}
+
+#content h3 {
+     float: right;
+     margin-right: 20%;
+}
+
+#content img, #content object {
+     float: left;
+}
+
+#aside {
+     display: inline;
+     float: right;
+     margin: 0pt 3% 0pt 0pt;
+     padding: 20px 0pt;
+     width: 26%;
+}
+
+.filtered .hidden {
+     display: none;
+}
+
+.left {
+     float: left;
+}
+
+.clear {
+     clear: both;
+}
+
+.imageContainer {
+	background-position: center 30% !important;
+	display: block;
+	height: 200px;
+	position: relative;
+	width: 200px;
+}
+
+.imageContainer:hover .description {
+     display: block;
+}
+
+a, a:hover, a:visited { text-decoration: none; color: black;}
+
+.description {
+	
+     background: url("/public/images/arrow.png") no-repeat scroll 0pt 0pt transparent;
+     display: none;
+     height: 54px;
+     left: 160px;
+     overflow: hidden;
+     padding-left: 30px;
+     padding-top: 10px;
+     position: absolute;
+     text-align: left;
+     top: 20px;
+     width: 170px;
+     z-index: 100;
+}
+
+#wrap {
+     margin-left: auto;
+     margin-right: auto;
+     width: 90%;
+}
+

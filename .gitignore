@@ -1,0 +1,5 @@
+data/
+tmp/
+modules/
+db/
+conf/application.conf
