@@ -4,3 +4,4 @@ modules/
 db/
 conf/application.conf
 logs/
+server.pid
