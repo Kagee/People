@@ -12,7 +12,7 @@ public class Person extends Model {
 	public String nick;
 	@Required	
 	public String name;
-
+	public String bio;
 	public Blob image;
 
 	public String aliases;
