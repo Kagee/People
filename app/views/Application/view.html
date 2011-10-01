@@ -1,7 +1,5 @@
 #{extends 'main.html' /}
 #{set title:'Detailis for denizen ' + person.nick /}
-<div id="container">
-
 <a href="@{bndex()}">⇦ Tilbake</a>
 <div id="content-container">
 	<div id="view-content">
@@ -9,17 +7,17 @@
 			
 			
 			#{if person.image.exists()}
-				<img src="@{userPhoto(person.id)}">
+				<img src="@{userPhoto(person.id)}" alt="${person.nick} aka ${person.name}">
 			#{/if}
 			#{else}
 				<img src="@{'/public/images/missing.png'}" />
 			#{/else}
-<h3>Kallenavn: ${person.nick}<br />Navn: ${person.name} 
+			<h3>Kallenavn: ${person.nick}<br />Navn: ${person.name} 
 			#{if person.aliases }<br />Andre kallenavn: ${person.aliases}#{/if}</h3>
 		#{/if}
 		#{else}
 			<p>There are no people.</p>
-			<img src="@{'/public/images/missing.png'}" />
+			<img src="@{'/public/images/missing.png'}" alt="Image placeholder, silhouette of two people" />
 		#{/else}
 	</div>
 </div>

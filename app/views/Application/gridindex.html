@@ -4,9 +4,10 @@
 *{ Add (thus overwriting the original) bovan's stylesheet when css=true }*
 #{if css}
 #{set 'moreStyles'}
-        #{stylesheet 'bovan.css' /}
+    <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/bovan.css'}">
 #{/set}
 #{/if}
+
 <div id="grid-container">
 	#{if people}
 		<label for="filter">Filter: </label><input id="filter" name="filter" size="20" autofocus /> [ design:  <a href="@{bndex()}">b</a> <a href="@{cndex()}">c</a> ]
@@ -17,7 +18,7 @@
 			<div class="imageContainer left" style="background: url('@{userPhoto(person.id)}')">
 #{/if} 
 				#{else}
-<div class="imageContainer left" style="background: url('@{'/public/images/missing.png'}')">
+                        <div class="imageContainer left" style="background: url('@{'/public/images/missing.png'}')">
 #{/else}
 				<div class="description"><span class="nickname">${person.nick}</span><br /><span class="realname">${person.name}</span></div>
 				
@@ -35,10 +36,9 @@
 		#{else}
 	<p>Build more burrows</p>
 		#{/else}
-		</div>
-	</div>
 </div>
-<script type="text/javascript" charset="${_response_encoding}">
+
+<script type="text/javascript">
 $("#filter").keyup(function () {
     var filter = $(this).val();
     $("#wrap .description").each(function () {
