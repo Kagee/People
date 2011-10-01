@@ -3,3 +3,4 @@ tmp/
 modules/
 db/
 conf/application.conf
+logs/
