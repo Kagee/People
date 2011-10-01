@@ -1,13 +1,12 @@
  
 #{extends 'main.html' /}
 #{set title:'Listing of #kopweb\'s denizens' /}
-*{ Add (thus overwriting the original) bovan's stylesheet when css=true }*
-#{if css}
+*{ Add (thus overwriting the original) bovan's stylesheet when  }*
+#{if co == 'b'}
 #{set 'moreStyles'}
     <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/bovan.css'}">
 #{/set}
 #{/if}
-
 <div id="grid-container">
 	#{if people}
 		<label for="filter">Filter: </label><input id="filter" name="filter" size="20" autofocus /> [ design:  <a href="@{bndex()}">b</a> <a href="@{cndex()}">c</a> ]

@@ -3,10 +3,10 @@
 # ~~~~
 
 # Home page
-GET		/										Application.bndex
+GET		/									Application.gridindex
 GET		/view/{id}								Application.view
-GET		/bndex									Application.bndex
-GET		/endex									Application.endex
+GET		/use-b-index									Application.bndex
+GET		/use-c-index									Application.endex
 GET		/image/{id}								Application.userPhoto
 *		/admin									module:crud
 # Import Secure routes
