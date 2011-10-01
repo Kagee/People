@@ -1,6 +1,8 @@
 body {
      font-family: ubuntu,sans-serif;
      font-size: 18px;
+     background-color: black;
+     color: white;
 }
 
 .nickname {
@@ -92,11 +94,11 @@ ul {
      display: block;
 }
 
-a, a:hover, a:visited { text-decoration: none; color: black;}
+a, a:hover, a:visited { text-decoration: none; color: inherit; }
 
-.description {
-	
+.description {	
      background: url("/public/images/arrow.png") no-repeat scroll 0pt 0pt transparent;
+     color: black;
      display: none;
      height: 54px;
      left: 160px;
@@ -111,6 +113,7 @@ a, a:hover, a:visited { text-decoration: none; color: black;}
 }
 
 #wrap {
+     margin-top: 15px;
      margin-left: auto;
      margin-right: auto;
      width: 90%;
