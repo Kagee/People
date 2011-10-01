@@ -22,7 +22,7 @@ public class Application extends Controller {
 		gridindex();	
 	}
 	public static void gridindex() {
-		List people = Person.find("order by lower(nick) asc").fetch();
+		List people = Person.find("accepted = true order by lower(nick) asc").fetch();
 		Cookie c = Http.Request.current().cookies.get("design");
 		String co = (c != null ? c.value : "b");	
 		render(people, co); 

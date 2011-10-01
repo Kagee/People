@@ -14,7 +14,7 @@ public class Person extends Model {
 	public String name;
 	public String bio;
 	public Blob image;
-
+	public boolean accepted;
 	public String aliases;
 
  	public Person(String nick, String name) {
