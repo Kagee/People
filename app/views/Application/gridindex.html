@@ -19,7 +19,7 @@
 				#{else}
                         <div class="imageContainer left" style="background: url('@{'/public/images/missing.png'}')">
 #{/else}
-				<div class="description"><span class="nickname">${person.nick}</span><br /><span class="realname">${person.name}</span></div>
+				<div class="description"><span class="nickname">${person.formattedNick()}</span><br /><span class="realname">${person.name}</span></div>
 				
 				#{if person.image.exists()}
 					<img class="userimage" src="@{userPhoto(person.id)}" alt="${person.nick}" />

@@ -14,6 +14,7 @@ public class Person extends Model {
 	public String name;
 	public String bio;
 	public Blob image;
+	public boolean op;	
 	public boolean accepted;
 	public String aliases;
 
@@ -21,8 +22,10 @@ public class Person extends Model {
  		this.nick = nick;
 		this.name = name;
 	}
-
+	public String formattedNick() {
+		return (op ? "@" : "") + nick;
+	}
 	public String toString() {
-		return nick + " ( " + name + ", " +  (image.exists()? "has image" : "dosen't have image") + " )";
+		return nick + " ( " + name + " )";
 	}
 }
