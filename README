@@ -2,7 +2,7 @@ An application to display nick, realnames images and aliases for users.
 
 To deploy: 
 
-Add yout own application.conf in conf/, and include atleast:
+Add your own application.conf in conf/, and include atleast:
 
 Username and password for admin section login
 admin.login.username
